@@ -19,7 +19,9 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         //添加shiro内置过滤器
         Map<String,String> filterMap = new LinkedHashMap<String, String>();
-        filterMap.put("index","anon");
+        filterMap.put("/index","anon");
+        filterMap.put("/one","anon");
+
         filterMap.put("/*","authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
