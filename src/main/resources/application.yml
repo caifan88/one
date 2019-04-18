@@ -1,13 +1,19 @@
 server:
   port: 8080
   servlet:
-    #��Ŀ��
+    #项目路径
     context-path: /
 
-    #����Դ
+    #数据源配置
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/one?useUnicode=true&characterEncoding=utf8
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: root
+
+  #配置视图解析器
+  #mvc:
+   # view:
+    #  prefix: /templates/
+    #  suffix: .html

@@ -11,4 +11,22 @@ public class PageController {
     public String hello(){
         return "Hello World";
     }
+
+    @RequestMapping("login")
+    public String login(){
+        return "login";
+    }
+    @RequestMapping("successful")
+    public String successful(){
+        return "successful";
+    }
+
+    @RequestMapping("one")
+    public String loginOne(){
+
+        return "index";
+    }
+
+
+
 }
