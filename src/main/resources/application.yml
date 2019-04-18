@@ -1,6 +1,10 @@
 server:
   port: 8080
+  servlet:
+    #项目名
+    context-path: /
 
+    #数据源
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/one?useUnicode=true&characterEncoding=utf8
